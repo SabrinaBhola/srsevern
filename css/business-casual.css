@@ -1,9 +1,18 @@
 body {
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  background: url(../img/home/bgl.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@font-face {
+    font-family: folkard_;
+    src: url('folkard_.eot?') format('eot'), url('folkard_.ttf') format('truetype');
+}
+
+.srsevern{
+  font-family: folkard_;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 1.25em;
   line-height: 1.6;
-  color: #000;
+  color: #fff;
 }
 
 hr {
@@ -59,10 +68,12 @@ hr {
 }
 
 .box {
-  background: #fff;
-  background: rgba(255,255,255,0.9);
+  background: #000;
+  background: rgba(0,0,0,0.7);
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
   padding: 30px 15px;
+  font-size: 1.5em;
 }
 
 .intro-text {
@@ -84,8 +95,9 @@ hr {
 }
 
 footer {
-  background: #fff;
-  background: rgba(255,255,255,0.9);
+  background: #000;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
 }
 
 footer p {
@@ -102,7 +114,7 @@ footer p {
   line-height: normal;
   text-align: center;
   margin: 0;
-  padding: 30px 0 10px;
+  padding: 10px 0 0px;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -120,7 +132,7 @@ footer p {
   display: inherit;
   text-align: center;
   margin: 0;
-  padding: 0 0 40px;
+  padding: 0 0 10px;
   font-size: 1.25em;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -142,8 +154,8 @@ footer p {
 }
 
 .navbar-default {
-  background: #fff;
-  background: rgba(255,255,255,0.9);
+  background: #000;
+  background: rgba(0,0,0,0.7);
   border: none;
 }
 
@@ -151,6 +163,12 @@ footer p {
   padding: 35px;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > .current{
+    color: #ffff00;
+}
 .navbar-nav>li>a {
   line-height: normal;
 }
